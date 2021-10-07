@@ -23,6 +23,10 @@ nav {
     
 }
 
+.liste a {
+    text-decoration: none;
+}
+
 .items {
     margin:0 15px;
     text-transform: uppercase;

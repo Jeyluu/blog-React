@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState, useEffect, useRef} from 'react'
+import { Link } from 'react-router-dom';
 import "./Navbar.css"
 
 export default function Navbar() {
@@ -31,9 +32,16 @@ export default function Navbar() {
             {(toggleMenu || largeur > 500) && (
 
                 <ul className="liste">
-                    <li className="items">Accueil</li>
-                    <li className="items">Ecrire</li>
-                    <li className="items">Contact</li>
+                    <Link to="/"> 
+                        <li className="items">Accueil</li>
+                    </Link>
+                    <Link to="/ecrire">
+                        <li className="items">Ecrire</li>
+                    </Link>
+                    <Link to="/contact">
+                        <li className="items">Contact</li>
+                    </Link>
+                    
                 </ul>
 
             )}
