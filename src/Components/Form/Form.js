@@ -15,7 +15,17 @@ export default function Form() {
     // Constante qui évitera de raffraichir la page.
     const handleForm = e => {
         e.preventDefault();
-    }
+
+        dispatch({
+            type: 'ADDARTICLE',
+            payload: article
+        })
+
+        setArticle({
+            title: "",
+            body:""
+        })
+    };
 
     const handleInput = e => {
         
