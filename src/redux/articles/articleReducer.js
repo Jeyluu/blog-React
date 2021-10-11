@@ -13,14 +13,12 @@ function articleReducer(state = INITIAL_STATE, action) {
             newArr.unshift(action.payload)
 
             return {
-                ...state,
                 articles:newArr
             }
 
 
         case "LOADARTICLES": {
             return {
-                ...state,
                 articles: action.payload
             }
         }
